@@ -1,0 +1,82 @@
+bedanya nodelist dan  htmlcollection:
+nodelist -> kumpulan element element  beserta anak2nya (text). berisi node  apapun
+html -> kumpulan element element htmlnya saja
+htmlcollection bersifat live sedangkan nodeList tidak.
+
+DOM Selection Method 
+- getElementById()  -> ambil element berdasarkan id
+- getElementsByTagName()  -> ambil seluruh element berdasarkan nama tag element
+- getElementsByClassName() -> ambil seluruh element berdasarkan nama kelasnya.
+- querySelector()  -> ambil salah satu element berdasarkan element yg dituju, misal element dgn kelas judul, berarti .judul  
+- querySelectorAll()  -> ambil seluruh element berdasarkan element yg dituju.
+
+
+getElementById()  -->  element
+getElementsByTagName()  --> HTMLCollection
+getElementsByClassName()  --> HTMLCollection
+querySelector()  -->  element
+querySelectorAll()  --> nodeList
+
+
+Manipulasi element
+- element.innerHTML
+- element.style.<property>
+- element.setAttribute()
+- element.getAttribute()   -> buat tau isi dari atributte
+- element.removeAttribute()
+- element.classList.add()
+- element.classList.remove()
+- element.classList.toggle()  ->  kalau element gak punya kelas tertentu akan ditambahkan, tapi kalau punya bakal dihapus kelasnya
+- element.classList.item()  -> untuk mengetahui kelas tertentu. misal elemen ada 3 kelas, kita pengen tau kelas ke dua nya apa, nah pakai ini
+- element.classList.contains()  -> untuk mengecek apakah ada kelas tertentu dalam sebuah element tersebut
+- element.classList.replace()  ->  mengganti nama kelas
+- ...
+
+Manipulasi node
+- document.createElement()
+- document.createTextNode()
+- node.appendChild()
+- node.insertBefore()
+- parentNode.removeChild()
+- parentNode.replaceChild()
+- ...
+
+Manipulasi Node (Method Baru)
+- parentNode.append()   -> diakhir
+- parentNode.prepend()  -> diawal
+- childNode.before()
+- childNode.after()
+- childNode.remove()
+- childNode.replaceWith()
+- ...
+
+DOM Events
+Event pada js mempresentasikan sebuah kejadian yg
+terjasi di dalam DOM, kejadian tersebut bisa dilakukan
+oleh user ataupun dilakukan secara otomatis oleh API
+
+Cara 'mendengarkan' Event
+- Event Handler
+  - Inline HTML attribute
+  - Element Method
+- addEventListener()
+
+
+DOM Traversal -> DOM Penelusuran
+DOM Traversal Method
+- parentNode  -> node 
+- parentElement  -> element
+- nextSibling  -> node
+- nextElementSibling  -> element
+- previousSibling -> node
+- previousElementSibling  -> element
+
+
+Prevent Default -> tujuan menghentikan aksi default yang dilakukan element web kita 
+Prevent Default sebuah method yang ada dalam sebuah objek event
+
+
+
+
+
+
